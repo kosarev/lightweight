@@ -1,2 +1,2 @@
 # lightweight
-Library of lightweight C++ replacements to standard facilities
+Library of lightweight replacements to standard C++ facilities.
