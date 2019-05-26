@@ -13,9 +13,14 @@
 
 namespace lw {
 
+// Used to make sure that the called is() member function is
+// not inherited from base classes.
+template<typename T>
+class downcast_token {};
+
 template<typename D, typename B>
 bool is(const B *b) {
-    return b && D::is(*b);
+    return b && D::is(downcast_token<const D>(), *b);
 }
 
 template<typename D, typename B>
