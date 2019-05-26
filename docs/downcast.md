@@ -82,3 +82,9 @@ int main() {
 }
 ```
 [downcast.cpp](../examples/downcast.cpp)
+
+
+### Acknowledgements
+
+Inspired by LLVM-style RTTI,
+<https://llvm.org/docs/HowToSetUpLLVMStyleRTTI.html>.
